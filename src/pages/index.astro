@@ -1,6 +1,6 @@
 ---
 import RootLayout from '../layouts/RootLayout.astro';
-import Card from '../components/Card.astro';
+import ServicesContainer from '../components/ServicesContainer';
 ---
 
 <RootLayout title="SPAP Technology Solutions">
@@ -115,13 +115,20 @@ import Card from '../components/Card.astro';
 			</h1>
 			<p class="text-blue-400 text-sm p-4">Swipe up to learn more</p>
 		</section>
-		<section id="intro">
+		<section class="max-w-sm mx-auto p-2" id="intro">
 			<h1 class="text-4xl font-semibold text-primary-white">
 				Utilize your tech
 				<br />
 				like a pro.
 			</h1>
-			<p></p>
+			<p class="mt-4 text-primary-white">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut nemo in
+				voluptate sequi, inventore aperiam laborum magnam non, nobis modi. Autem
+				fugiat obcaecati aperiam ducimus ea ab, eum impedit.
+			</p>
+			<section class="mt-16" id="services">
+				<ServicesContainer client:visible />
+			</section>
 		</section>
 	</main>
 </RootLayout>
