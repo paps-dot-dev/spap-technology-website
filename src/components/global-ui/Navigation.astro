@@ -1,0 +1,25 @@
+---
+import NavContainer from './NavContainer';
+
+const navItems = [
+	{
+		title: 'Home',
+		icon_url: 'spap-icons/icons/PNG/black_icon.png',
+		href_url: '/home',
+	},
+	{
+		title: 'Home',
+		icon_url: 'spap-icons/icons/PNG/black_icon.png',
+		href_url: '/home',
+	},
+	{
+		title: 'Home',
+		icon_url: 'spap-icons/icons/PNG/black_icon.png',
+		href_url: '/home',
+	},
+];
+---
+
+<nav class="fixed bottom-10 h-[64px] w-screen">
+	<NavContainer client:load navItems={navItems} />
+</nav>
