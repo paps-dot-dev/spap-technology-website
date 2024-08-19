@@ -1,5 +1,5 @@
 ---
-
+const currentYear = new Date().getFullYear();
 ---
 
 <footer class="p-5 border-t-2 mt-32">
@@ -107,4 +107,8 @@
 			></path></g
 		></svg
 	>
+	<p class="text-xs text-primary-white mt-4">
+		&copy; <span id="year">{currentYear}</span> SPAP Technology Solutions LLC. All
+		rights reserved.
+	</p>
 </footer>
