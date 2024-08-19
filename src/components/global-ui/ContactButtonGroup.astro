@@ -1,0 +1,13 @@
+---
+const contacts = [
+	{
+		name: 'Email',
+		url: 'mailto:spapineau@spapineautechnology.com',
+		thumbnail_path: 'icons/lightbulb_icon',
+	},
+];
+---
+
+<div>
+	{contacts.map((item) => <a>{item.name}</a>)}
+</div>

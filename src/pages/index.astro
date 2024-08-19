@@ -1,6 +1,7 @@
 ---
 import RootLayout from '../layouts/RootLayout.astro';
 import ServicesContainer from '../components/ServicesContainer';
+import TestimonialContainer from '../components/TestimonialContainer';
 ---
 
 <RootLayout title="SPAP Technology Solutions">
@@ -111,8 +112,27 @@ import ServicesContainer from '../components/ServicesContainer';
 				></svg
 			>
 			<h1 class="mt-4 text-lg text-primary-white">
-				website and app development made simple.
+				website & app development services.
 			</h1>
+			<a
+				class="bg-indigo-600 p-4 text-white rounded-full text-center mt-4 font-semibold flex justify-center"
+				>Book a Free 30-Minute Consultation <svg
+					class="mx-2"
+					class="inline"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M5 12H19M19 12L13 6M19 12L13 18"
+						stroke="#ffffff"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"></path>
+				</svg></a
+			>
 			<p class="text-blue-400 text-sm p-4">Swipe up to learn more</p>
 		</section>
 		<section class="max-w-sm mx-auto p-2" id="intro">
@@ -122,13 +142,85 @@ import ServicesContainer from '../components/ServicesContainer';
 				like a pro.
 			</h1>
 			<p class="mt-4 text-primary-white">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut nemo in
-				voluptate sequi, inventore aperiam laborum magnam non, nobis modi. Autem
-				fugiat obcaecati aperiam ducimus ea ab, eum impedit.
+				In today’s fast-paced digital landscape, having the right technology is
+				only half the battle; knowing how to maximize its potential is where the
+				true advantage lies. <br /><br />Whether you’re dealing with a tangled
+				web of tools or looking to streamline your online presence, <span
+					class="text-indigo-400"
+					>SPAP Technology
+				</span>offers solutions that cut through the noise. With a focus on
+				clarity, usability, and efficiency, SPAP Technology will help you
+				leverage your tech stack to its fullest, ensuring your business not only
+				keeps up with the competition but <span
+					class="text-indigo-400 italic font-semibold">leads the way.</span
+				>
 			</p>
-			<section class="mt-16" id="services">
-				<ServicesContainer client:visible />
-			</section>
+		</section>
+		<section class="mt-16 p-2 mb-16" id="services">
+			<ServicesContainer client:visible />
+		</section>
+		<section class="p-2">
+			<h1 class="text-4xl font-semibold text-primary-white max-w-sm mx-auto">
+				Why Hire Me?
+			</h1>
+			<p class="text-primary-dark bg-white rounded-xl p-8 mt-4">
+				In a market where many companies charge premium prices for outdated
+				solutions, I offer something different—innovation. <br />
+				<br /> While others stick to what they know, even if it’s no longer effective,
+				I stay ahead of the curve by utilizing the latest technology and best practices.
+				My focus is on creating solutions that lead industries, not just conform
+				to them.
+			</p>
+
+			<div
+				class="text-primary-white border-4 border-indigo-500 mt-4 rounded-xl p-4"
+			>
+				<h2
+					class="text-xl font-semibold border-b-2 border-b-primary-white py-2 mb-4"
+				>
+					When you hire me, you’re not just getting a developer
+				</h2>
+				<p class="bg-white text-black rounded-xl p-4">
+					You’re partnering with someone who is committed to delivering real
+					value, cutting-edge performance, and a fresh perspective that pushes
+					boundaries and drives results.
+				</p>
+			</div>
+			<a
+				href="/solutions"
+				class="block bg-indigo-600 w-full text-center mx-auto text-lg p-4 rounded-full text-primary-white font-semibold mt-4"
+			>
+				See My Work
+			</a>
+		</section>
+		<section class="p-2 flex flex-col mt-32">
+			<h1 class="text-4xl font-semibold text-primary-white mb-4">
+				Ready to <br /> Unf[...]ck Your <br /> Tech Stack?
+			</h1>
+			<p class="text-primary-white">
+				Tired of dealing with outdated, inefficient systems? It’s time for a
+				change. Schedule a consultation call today, and let’s talk about how I
+				can help you streamline, modernize, and optimize your tech stack.
+			</p>
+			<p class="text-indigo-300 font-semibold text-xl mt-4 mb-8">
+				Your tech transformation starts with a simple conversation—let’s get
+				started.
+			</p>
+			<a
+				class="bg-indigo-600 w-full text-center mx-auto text-lg p-4 rounded-full text-primary-white font-semibold"
+				>Schedule Free Consultation</a
+			>
+		</section>
+		<section class="mt-32 p-2">
+			<h1 class="text-4xl font-semibold text-primary-white mb-4">
+				Still Not Convinced?
+			</h1>
+			<h2 class="text-primary-white">
+				Read through some testimonials from clients just like you & see how <span
+					class="text-indigo-500 font-semibold">SPAP Technology Solutions</span
+				> made an impact on their business.
+			</h2>
+			<TestimonialContainer />
 		</section>
 	</main>
 </RootLayout>

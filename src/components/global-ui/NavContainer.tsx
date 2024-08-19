@@ -45,7 +45,7 @@ const NavContainer: React.FC<Props> = ({ navItems }) => {
 			) : (
 				<button
 					onClick={() => setShowNavbar(!showNavbar)}
-					className="bg-primary-white w-16 h-16 flex justify-center items-center text-2xl rounded-full bg-opacity-95 z-10 ml-auto mr-2">
+					className="bg-primary-white w-16 h-16 flex justify-center items-center text-2xl rounded-full bg-opacity-95 z-10 ml-auto mr-2 border-2 border-indigo-800">
 					<MdMenu className="text-indigo-600" />
 				</button>
 			)}
