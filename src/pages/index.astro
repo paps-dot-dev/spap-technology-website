@@ -2,13 +2,16 @@
 import RootLayout from '../layouts/RootLayout.astro';
 import ServicesContainer from '../components/ServicesContainer';
 import TestimonialContainer from '../components/TestimonialContainer';
+import SocialLinks from '../components/global-ui/SocialLinks.tsx';
 ---
 
 <RootLayout title="SPAP Technology Solutions">
-	<main class="max-w-screen-sm">
+	<main class="max-w-screen-sm lg:max-w-screen-2xl">
+		<SocialLinks />
+
 		<section class="flex flex-col justify-center items-center h-screen w-full">
 			<svg
-				class="w-64"
+				class="w-64 lg:w-[32rem]"
 				id="Layer_2"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 1054.09 392.67"
@@ -111,7 +114,7 @@ import TestimonialContainer from '../components/TestimonialContainer';
 					></path></g
 				></svg
 			>
-			<h1 class="mt-4 text-lg text-primary-white">
+			<h1 class="mt-4 text-lg text-primary-white lg:text-2xl lg:mb-8">
 				website & app development services.
 			</h1>
 			<a
@@ -133,10 +136,13 @@ import TestimonialContainer from '../components/TestimonialContainer';
 						stroke-linejoin="round"></path>
 				</svg></a
 			>
-			<p class="text-blue-400 text-sm p-4">Swipe up to learn more</p>
+			<p class="text-blue-400 text-sm p-4 lg:hidden">Swipe up to learn more</p>
 		</section>
-		<section class="max-w-sm mx-auto p-2" id="intro">
-			<h1 class="text-4xl font-semibold text-primary-white">
+		<section
+			class="max-w-sm lg:max-w-screen-2xl lg:min-h-[50vh] mx-auto lg:mx-10 p-2"
+			id="intro"
+		>
+			<h1 class="text-4xl font-semibold text-primary-white lg:text-7xl">
 				Utilize your tech
 				<br />
 				like a pro.
@@ -156,14 +162,21 @@ import TestimonialContainer from '../components/TestimonialContainer';
 				>
 			</p>
 		</section>
-		<section class="mt-16 p-2 mb-16" id="services">
+		<section class="mt-16 p-2 mb-16 lg:min-h-[80vh] lg:mx-10" id="services">
+			<h1 class="text-4xl lg:text-7xl text-primary-white py-8 font-semibold">
+				Areas of Expertise
+			</h1>
 			<ServicesContainer client:visible />
 		</section>
 		<section class="p-2">
-			<h1 class="text-4xl font-semibold text-primary-white max-w-sm mx-auto">
-				Why Hire Me?
+			<h1
+				class="text-4xl lg:text-7xl lg:max-w-screen-2xl font-semibold text-primary-white max-w-sm mx-10"
+			>
+				Why Hire Me? Results.
 			</h1>
-			<p class="text-primary-dark bg-white rounded-xl p-8 mt-4">
+			<p
+				class="text-primary-dark bg-white rounded-xl p-8 mt-4 lg:mx-10 lg:mb-16 lg:p-20"
+			>
 				In a market where many companies charge premium prices for outdated
 				solutions, I offer something different—innovation. <br />
 				<br /> While others stick to what they know, even if it’s no longer effective,
@@ -173,7 +186,7 @@ import TestimonialContainer from '../components/TestimonialContainer';
 			</p>
 
 			<div
-				class="text-primary-white border-4 border-indigo-500 mt-4 rounded-xl p-4"
+				class="text-primary-white border-4 border-indigo-500 mt-4 lg:mx-10 rounded-xl p-4 lg:p-20 lg:mb-32"
 			>
 				<h2
 					class="text-xl font-semibold border-b-2 border-b-primary-white py-2 mb-4"
@@ -188,13 +201,13 @@ import TestimonialContainer from '../components/TestimonialContainer';
 			</div>
 			<a
 				href="/solutions"
-				class="block bg-indigo-600 w-full text-center mx-auto text-lg p-4 rounded-full text-primary-white font-semibold mt-4"
+				class="block bg-indigo-600 w-full text-center mx-auto text-lg p-4 rounded-full text-primary-white font-semibold mt-4 lg:p-8 lg:text-xl"
 			>
 				See My Work
 			</a>
 		</section>
-		<section class="p-2 flex flex-col mt-32">
-			<h1 class="text-4xl font-semibold text-primary-white mb-4">
+		<section class="p-2 flex flex-col mt-32 lg:mx-10">
+			<h1 class="text-4xl font-semibold text-primary-white mb-4 lg:text-7xl">
 				Ready to <br /> Unf[...]ck Your <br /> Tech Stack?
 			</h1>
 			<p class="text-primary-white">
@@ -207,11 +220,11 @@ import TestimonialContainer from '../components/TestimonialContainer';
 				started.
 			</p>
 			<a
-				class="bg-indigo-600 w-full text-center mx-auto text-lg p-4 rounded-full text-primary-white font-semibold"
+				class="bg-indigo-600 w-full text-center mx-auto text-lg p-4 lg:p-8 rounded-full text-primary-white font-semibold"
 				>Schedule Free Consultation</a
 			>
 		</section>
-		<section class="mt-32 p-2">
+		<section class="mt-32 p-2 flex-col items-center hidden">
 			<h1 class="text-4xl font-semibold text-primary-white mb-4">
 				Still Not Convinced?
 			</h1>

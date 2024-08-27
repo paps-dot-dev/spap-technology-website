@@ -33,10 +33,10 @@ const NavContainer: React.FC<Props> = ({ navItems }) => {
 				<div>
 					<button
 						onClick={() => setShowNavbar(false)}
-						className="text-white w-fit bg-transparent absolute right-10 bottom-16 z-10 hover:bg-black">
+						className="text-white w-fit bg-transparent absolute right-10 bottom-16 z-10 hover:bg-black lg:text-2xl">
 						<MdClose />
 					</button>
-					<div className="btm-nav w-3/4 mx-auto mb-10 rounded-full">
+					<div className="btm-nav w-3/4 mx-auto mb-10 rounded-full bg-white text-black">
 						{navItems.map((item) => (
 							<NavItem key={item.title} link={item} />
 						))}

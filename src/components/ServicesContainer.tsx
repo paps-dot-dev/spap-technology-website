@@ -93,7 +93,7 @@ const services = [
 
 const ServicesContainer: React.FC = () => {
 	return (
-		<div className="space-y-4">
+		<div className="space-y-8">
 			{services.map((item) => (
 				<ServiceDropdown key={item.title} service={item} />
 			))}
