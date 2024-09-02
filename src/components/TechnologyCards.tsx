@@ -10,8 +10,8 @@ const TechnologyCards: React.FC<Props> = ({ technologies }) => {
 			{technologies?.map((item) => (
 				<div
 					title={item.name}
-					className=" h-12 flex flex-col justify-center w-12 rounded-xl bg-transparent shadow-md shadow-gray-400">
-					<img className="mx-auto my-1" width={24} src={item.thumbnail_url} />
+					className=" h-12 flex flex-col justify-center w-24 rounded-xl bg-primary-light p-8 shadow-md shadow-gray-400">
+					<img className="mx-auto my-1" width={32} src={item.thumbnail_url} />
 				</div>
 			))}
 		</div>

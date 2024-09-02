@@ -3,7 +3,11 @@ import NavItem from './NavItem';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 interface Props {
-	navItems: any;
+	navItems: Array<item>;
+}
+
+interface item {
+	title: string;
 }
 
 const NavContainer: React.FC<Props> = ({ navItems }) => {

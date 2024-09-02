@@ -9,6 +9,10 @@ const services = [
 		thumbnail_path: '/gif/webdev.gif',
 		technologies: [
 			{
+				name: 'Javascript',
+				thumbnail_url: 'https://svgl.app/library/javascript.svg',
+			},
+			{
 				name: 'React',
 				thumbnail_url: 'https://svgl.app/library/react.svg',
 			},
@@ -26,8 +30,8 @@ const services = [
 			},
 
 			{
-				name: 'Tailwind',
-				thumbnail_url: 'https://svgl.app/library/tailwindcss.svg',
+				name: 'Wordpress',
+				thumbnail_url: 'https://svgl.app/library/wordpress.svg',
 			},
 		],
 	},
@@ -59,6 +63,10 @@ const services = [
 			{
 				name: 'Figma',
 				thumbnail_url: 'https://svgl.app/library/figma.svg',
+			},
+			{
+				name: 'Webflow',
+				thumbnail_url: 'https://svgl.app/library/webflow.svg',
 			},
 		],
 	},
